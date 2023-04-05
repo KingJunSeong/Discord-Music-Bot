@@ -22,7 +22,7 @@ namespace DSharpBot
         {
             var discord = new DiscordClient(new DiscordConfiguration()
             {
-                Token = "Your token here",
+                Token = "your token here",
                 TokenType = TokenType.Bot,
                 Intents = DiscordIntents.AllUnprivileged | DiscordIntents.MessageContents,
                 MinimumLogLevel = LogLevel.Debug
@@ -48,7 +48,7 @@ namespace DSharpBot
             };
 
             var lavalink = discord.UseLavalink();
-
+           
             slash.RegisterCommands<SlashModule>(1092599605906120744);
             commands.RegisterCommands<PrefixModule>();
 
